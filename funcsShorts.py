@@ -101,6 +101,13 @@ def graining_filter(price_list, grain_number):
 
 #find chart sceleton
 
+def timeframe_slice(number):
+    start_number = number - 1
+    step = start_number // 6
+    end_number = start_number % step
+    
+    return end_number, start_number, step
+
 def skeleton_founder(price_list, i, j, k):
 
     skeleton_slice = slice(i, j, k)

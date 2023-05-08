@@ -8,15 +8,21 @@ def Candle_Search (ticker):
     
     open_list, high_list, low_list, close_list = dataload.Load_HP(ticker)[0], dataload.Load_HP(ticker)[1], dataload.Load_HP(ticker)[2], dataload.Load_HP(ticker)[3]
     
-    short_list = close_list[210:260]
-    print(short_list)
-    skeleton1 = funcs.skeleton_founder(short_list, 1, 50, 8)
-    print(skeleton1)
+    timeframe1 = 100
+    short_list1 = close_list[(260-timeframe1):260]
+    print(short_list1)
+    end_price, start_price, step = funcs.timeframe_slice(timeframe1)
+    #print(end_price, start_price, step)
+    skeleton1 = funcs.skeleton_founder(short_list1, end_price, start_price, step)
     likelihood_dict1 = funcs.find_nature(skeleton1)[2]
     print(likelihood_dict1)
     
-    short_list = close_list[246:260]
-    skeleton2 = funcs.skeleton_founder(short_list, 1, 14, 2)
+    timeframe2 = 20
+    short_list2 = close_list[(260-timeframe2):260]
+    print(short_list2)
+    end_price, start_price, step = funcs.timeframe_slice(timeframe2)
+    #print(end_price, start_price, step)
+    skeleton2 = funcs.skeleton_founder(short_list2, end_price, start_price, step)
     likelihood_dict2 = funcs.find_nature(skeleton2)[2]
     print(likelihood_dict2)
     

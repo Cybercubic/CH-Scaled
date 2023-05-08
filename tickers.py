@@ -98,3 +98,28 @@ tickers_crypto_KuCoin = ['AERGO-USDT', 'AGIX-USDT', 'AKRO-USDT', 'API3-USDT', 'A
                          'SHA-USDT', 'SXP-USDT', 'TEL-USDT', 'TLOS-USDT', 'TRVL-USDT', 'TT-USDT',
                          'TVK-USDT', 'UOS-USDT', 'VISION-USDT', 'VXV-USDT', 'WILD-USDT', 'ZKT-USDT'
                         ]
+
+tickers_energy = ['CLB', 'SU', 'WHD', 'PDCE', 'SHEL', 'VTS', 'LNG', 'MPC',
+                 'TRGP', 'DK', 'PBA', 'VTNR', 'FANG', 'NOV', 'PBF', 'PDS',
+                 'HAL', 'REX', 'HP', 'CCJ', 'PUMP', 'VAL', 'RRC', 'OGE',
+                 'DVN', 'SLB', 'CNQ', 'VLO', 'COP', 'ENB', 'XOM', 'CVX', 
+                 'OVV', 'NFE', 'EQT', 'CEG', 'TTE', 'SWN', 'EOG', 'HES',
+                 'CNX', 'MRO', 'OXY', 'FTI', 'APA', 'MGY', 'ET', 'VET', 
+                 'ARCH', 'SR', 'OII', 'AM', 'MUR', 'WMB', 'OIS', 'CTRA', 
+                 'CHX', 'KMI', 'PXD', 'BKR', 'BE', 'ENPH', 'VST', 'UUUU', 
+                 'SWX', 'OKE', 'AMR', 'PSX', 'WTTR', 'GEVO', 'OGS', 'BLDP', 
+                 'ETRN', 'RIG', 'FCEL'
+                  ]
+
+tickers_indexes = ['XU100.IS', '^IBEX', '^IBEX', '^SSMI', '^TECDAX', '^GDAXI', '^IMOEX', '^STOXX',
+                     '^RUI', '^FTMC', '^BVSP', '^N225', '^BFX', '^FTSE', '^NDX', '^NYA',
+                     '^HSCE', '^NSEI', '^FCHI', '^HSI', '^CASE', '^IXIC', '^DJUSSC', '^DJU',
+                     '^DJT', '^DJITR', '^GSPC', '^MID', '^FTLC', '^DJI'
+                     'ETRN', 'RIG', 'FCEL'
+                  ]
+
+tickers_commodity = ['OUSX', 'FCUSX', 'ZGUSD', 'ZIUSD', 'KWUSX', 'SMUSD', 'SUSX', 'CUSX',
+                     'LCUSX', 'BOUSX', 'LHUSX', 'RRUSD', 'PLUSD', 'ZCUSX', 'KEUSX', 'ZOUSX',
+                     'NGUSD', 'ZSUSX', 'OJUSX', 'HGUSD', 'GCUSD', 'LBUSD', 'HOUSD', 'CCUSD',
+                     'CLUSD', 'KCUSX', 'RBUSD', 'SIUSD', 'CTUSX', 'PAUSD'
+                    ]
