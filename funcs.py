@@ -81,7 +81,7 @@ def timeframe_slice(number):
 
 def skeleton_founder(price_list, i, j, k):
 
-    skeleton_slice = slice(i, j, k)
+    skeleton_slice = slice(i, j+1, k)
     skeleton = price_list[skeleton_slice]
     skeleton = minmax(skeleton)
 
@@ -235,3 +235,32 @@ def calculate_k(likelihood_dict1, likelihood_dict2, emotion_array):
     #print(k)
 
     return k
+
+def anomaly_eval (price_array, timeframe1, timeframe2):
+    
+    high_list = price_array[1]
+    low_list = price_array[2]
+    
+    #average for timeframe1
+    
+    short_high_list = high_list[-timeframe1-1:-1]
+    short_low_list = low_list[-timeframe1-1:-1]
+    
+    change_list = [short_high_list[i] - short_low_list[i] for i in range (len(short_high_list))]
+    
+    average_change = sum(change_list) / len(change_list)
+    
+    #average for timeframe2
+    
+    short_high_list_t2 = high_list[-timeframe2-1:-1]
+    short_low_list_t2 = low_list[-timeframe2-1:-1]
+    
+    change_list_t2 = [short_high_list_t2[i] - short_low_list_t2[i] for i in range (len(short_high_list_t2))]
+    
+    average_change_t2 = sum(change_list_t2) / len(change_list_t2)
+    
+    #anomaly aret calculation
+    
+    anomaly_rate = average_change_t2 / average_change 
+    
+    return anomaly_rate
